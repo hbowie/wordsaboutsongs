@@ -1,0 +1,150 @@
+<?nextrec?>
+<?output "../web/=$title&f$=.html"?>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>=$title$= | Words About Songs</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/concourse_t3.css" type="text/css" />
+    <link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+	</head>
+	<body>
+	  <div class="container"> <!-- Start of overall body content -->
+
+	  	<div class="page-header"> <!-- Start of page header row -->
+	  			<h1>Words About Songs</h1>
+	  	</div> <!-- end of page header -->
+	  	<div class="page-title">
+<?if =$type$= eq Song ?>
+	  		<h2>&#8220;=$title$=&#8221;</h2>
+<?else?>
+	  		<h2>=$title$=</h2>
+<?endif?>
+	  	</div>
+
+			<div class="row nav-column"> <!-- Start of page content row -->
+				<div class="col-xs-12 col-sm-2 "> <!-- start of first column -->
+					<div class="sidebar-nav">
+						<div class="navbar navbar-default" role="navigation">
+							<div class="container-fluid navbar-container">
+								<div class="navbar-header nav-style">
+									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar-content">
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+									<a class="visible-xs navbar-brand" href="index.html">
+										Home
+									</a>
+								</div> <!-- end of navbar-header -->
+								<div class="collapse navbar-collapse" id="mynavbar-content">
+									<ul class="nav navbar-nav nav-style">
+										<li>
+											<a href="index.html">
+												Home
+											</a>
+										</li>
+										<li>
+											<a href="about.html">
+												About
+											</a>
+										</li>
+										<li>
+											<a href="songs.html">
+												Songs
+											</a>
+										</li>
+										<li>
+											<a href="themes.html">
+												Themes
+											</a>
+										</li>
+										<li class="dropdown">
+										  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Follow <span class="caret"></span></a>
+											<ul class="dropdown-menu">
+												<li>
+													<a href="https://www.facebook.com/WordsAboutSongs/">
+														Facebook</a></li>
+												<li>
+													<a href="rss.xml">
+														RSS</a></li>
+												<li>
+													<a href="https://twitter.com/wordsaboutsongs">
+														Twitter</a></li>
+											</ul>
+										</li>
+									</ul> <!-- end of primary navbar list -->
+								</div>
+							</div> <!-- end of fluid container -->
+						</div> <!-- end of navbar -->
+					</div>
+				</div> <!-- end of first column -->
+
+				<div class="col-xs-12 col-sm-8 was-content">
+
+<?if =$type$= eq Song ?>
+<a href="=$amazon-link$="><img class="main-image" alt="=$album$=" src="images/=$album&f$=.jpg"></a>
+
+<h3>=$byline$=</h3>
+
+<?endif?>
+
+<?if "=$tags$=" ?>
+<p class="theme"><em>Theme: =$tags&g$=</em></p>
+
+<?endif?>
+=$body&o$=
+
+<?if =$type$= eq Song ?>
+<p>Appreciation written by: =$author$=</p>
+
+<p>Date Posted: =$date&EEEE MMMM d, yyyy$= </p>
+
+<p>Permalink: <a href="http://www.wordsaboutsongs.com/=$title&f$=.html">=$title&f$=.html</a></p>
+
+<?include "../next-slugs/=$title&f$=.html"?>
+
+<?endif?>
+				</div> <!-- End of middle column, containing content -->
+				<div class="col-xs-12 col-sm-2 ">
+					<div class="store">
+<?if "=$apple-music-link$=" ?>
+						<div class="store-link">
+						<a href="=$apple-music-link$=" style="display:inline-block;overflow:hidden;background:url(//linkmaker.itunes.apple.com/assets/shared/badges/en-us/music-lrg.svg) no-repeat;width:110px;height:40px;background-size:contain;"></a>
+						</div>
+
+						<div class="store-spacer">
+							&nbsp;
+						</div>
+
+<?endif?>
+<?if "=$apple-store-link$=" ?>
+						<div class="store-link">
+						<a href="=$apple-store-link$=" style="display:inline-block;overflow:hidden;background:url(//linkmaker.itunes.apple.com/assets/shared/badges/en-us/itunes-lrg.svg) no-repeat;width:110px;height:40px;background-size:contain;"></a>
+						</div>
+
+<?endif?>
+						</div>
+					</div> <!-- end of store -->
+				</div> <!-- end of right-hand column -->
+			</div> <!-- end of row -->
+			<div class="footer">
+				<hr />
+				<a href="about.html">Copyright</a> &copy; 2001 - 2017 by <a href="http://www.herbbowie.com">Herb Bowie</a> except where otherwise noted
+			</div>
+		</div> <!-- end of container -->
+	</body>
+</html>
+<?loop?>

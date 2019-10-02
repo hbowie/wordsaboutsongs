@@ -1,0 +1,11 @@
+module	action	modifier	object	value
+input	set		normalization	0
+input	set		xpltags	false
+input	open	notenik-general		#PATH#../content/
+filter	add	not equal to	Type	Index
+filter	set		params	
+filter	clear			
+filter	set		params	
+filter	add	not equal to	Type	Index
+filter	add	greater than or equal to	Status	9 - Closed
+filter	set		params	

@@ -1,0 +1,105 @@
+module	action	modifier	object	value
+
+<!-- Generate Next Slugs for Content Pages -->
+
+input	set		normalization	0
+input	set		xpltags	false
+input	open	notenik-general		#PATH#../content/
+filter	clear
+filter	set		params
+filter	add	equals	Status	9 - Closed
+filter	add	equals	Type	Song
+filter	set		params
+sort	clear
+sort	set		params
+sort	add	Descending	Date
+sort	set		params
+template	open	text		#PATH#../factory/next-slug-template.html
+template	generate
+
+<!-- Generate Tags Index Page in Markdown format -->
+
+input	set		normalization	0
+input	set		xpltags	true
+input	open	notenik-general		#PATH#../content/
+filter	add	equals	Type	Song
+filter	add	greater than or equal to	Status	9
+filter	set		params
+sort	add	Ascending	Tag
+sort	add	Ascending	Seq
+sort	add	Ascending	Date
+sort	add	Ascending	Title
+sort	set		params
+template	open	text		#PATH#../factory/themes-template.md
+template	generate
+template	open	text		#PATH#../factory/one-theme-template.md
+template	generate
+
+
+<!-- Generate Songs Index Page in Markdown format -->
+
+filter	clear
+filter	set		params
+sort	clear
+sort	set		params
+input	set		normalization	0
+input	set		xpltags	false
+input	open	notenik-defined		#PATH#../content/
+filter	add	equals	Type	Song
+filter	add	greater than or equal to	Status	9
+filter	set		params
+sort	add	Ascending	Title
+sort	set		params
+template	open	text		#PATH#../factory/songs-template.md
+template	generate
+
+
+<?-- Generate an HTML page for each piece of content in Markdown format -->
+
+filter	clear
+filter	set		params
+sort	clear
+sort	set		params
+input	set		normalization	0
+input	set		xpltags	false
+input	open	notenik-general		#PATH#../content/
+filter	add	greater than or equal to	Status	9
+filter	set		params
+template	webroot	text		#PATH#../web/
+template	open	text		#PATH#../factory/content-template.html
+template	generate
+
+<!-- Generate Home page of index.html -->
+
+sort	clear
+sort	set		params
+input	set		normalization	0
+input	set		xpltags	false
+input	open	notenik-general		#PATH#../content/
+filter	clear
+filter	set		params
+filter	add	not equal to	Type	Index
+filter	add	greater than or equal to	Status	9 - Closed
+filter	set		params
+sort	add	Descending	Date
+sort	set		params
+template	webroot	text		#PATH#../web/
+template	open	text		#PATH#../factory/home-template.html
+template	generate
+
+<!-- Generate RSS feed -->
+
+filter	clear
+filter	set		params
+sort	clear
+sort	set		params
+input	set		normalization	0
+input	set		xpltags	false
+input	open	notenik-general		#PATH#../content/
+filter	add	equals	Type	Song
+filter	add	greater than or equal to	Status	9
+filter	set		params
+sort	add	Descending	Date
+sort	set		params
+template	open	text		#PATH#../factory/rss-template.xml
+template	generate

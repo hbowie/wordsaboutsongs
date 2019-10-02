@@ -1,0 +1,8 @@
+<?set last-title = "" ?>
+<?nextrec?>
+<?if "=$last-title$=" ?>
+<?output "../next-slugs/=$last-title&f$=.html"?>
+<p>Next Song: <a href="=$title&f$=.html">=$title$=</a></p>
+<?endif?>
+<?set last-title = =$title$= ?>
+<?loop?>

@@ -1,0 +1,15 @@
+module	action	modifier	object	value
+input	set		normalization	0
+input	set		xpltags	false
+input	open	notenik-defined		#PATH#../content/
+filter	clear			
+filter	set		params	
+filter	add	equals	Status	9 - Closed
+filter	add	equals	Type	Song
+filter	set		params	
+sort	clear			
+sort	set		params	
+sort	add	Descending	Date	
+sort	set		params	
+template	open	text		#PATH#../factory/next-slug-template.html
+template	generate			

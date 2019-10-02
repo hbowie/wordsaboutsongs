@@ -1,0 +1,11 @@
+module	action	modifier	object	value
+sort	clear			
+sort	set		params	
+filter	clear			
+filter	set		params	
+input	set		normalization	0
+input	set		xpltags	false
+input	open	notenik+		#PATH#../content/
+template	webroot	text		#PATH#../web/
+template	open	text		#PATH#../factory/home-template.html
+template	generate			
