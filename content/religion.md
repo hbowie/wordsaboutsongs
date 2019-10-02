@@ -28,9 +28,9 @@ Body:
 
 
 * "[Will the Circle be Unbroken](will-the-circle-be-unbroken.html)"
-    - *Traditional*
+-- *Traditional*
 
 * "[Fruitcakes](fruitcakes.html)"
-    - *Recorded by Jimmy Buffett, Written by Jimmy Buffett and Amy Lee*
+-- *Recorded by Jimmy Buffett, Written by Jimmy Buffett and Amy Lee*
 
- 
+

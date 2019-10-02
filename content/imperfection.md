@@ -28,6 +28,6 @@ Body:
 
 
 * "[Fruitcakes](fruitcakes.html)"
-    - *Recorded by Jimmy Buffett, Written by Jimmy Buffett and Amy Lee*
+-- *Recorded by Jimmy Buffett, Written by Jimmy Buffett and Amy Lee*
 
- 
+

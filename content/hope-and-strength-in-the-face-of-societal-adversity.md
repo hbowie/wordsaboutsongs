@@ -28,6 +28,6 @@ Body:
 
 
 * "[Don't Let Nobody Turn You Around](dont-let-nobody-turn-you-around.html)"
-    - *Written by Steve Miller, Performed by the Steve Miller Band*
+-- *Written by Steve Miller, Performed by the Steve Miller Band*
 
- 
+

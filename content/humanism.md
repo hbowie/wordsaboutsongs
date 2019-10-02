@@ -28,12 +28,12 @@ Body:
 
 
 * "[Will the Circle be Unbroken](will-the-circle-be-unbroken.html)"
-    - *Traditional*
+-- *Traditional*
 
 * "[The Village Green Preservation Society](the-village-green-preservation-society.html)"
-    - *Ray Davies and The Kinks*
+-- *Ray Davies and The Kinks*
 
 * "[Fruitcakes](fruitcakes.html)"
-    - *Recorded by Jimmy Buffett, Written by Jimmy Buffett and Amy Lee*
+-- *Recorded by Jimmy Buffett, Written by Jimmy Buffett and Amy Lee*
 
- 
+

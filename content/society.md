@@ -28,6 +28,5 @@ Body:
 
 
 * "[The Village Green Preservation Society](the-village-green-preservation-society.html)"
-    - *Ray Davies and The Kinks*
+-- *Ray Davies and The Kinks*
 
- 

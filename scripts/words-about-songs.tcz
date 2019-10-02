@@ -54,7 +54,7 @@ template	open	text		#PATH#../factory/songs-template.md
 template	generate
 
 
-<?-- Generate an HTML page for each piece of content in Markdown format -->
+<!-- Generate an HTML page for each piece of content in Markdown format -->
 
 filter	clear
 filter	set		params

@@ -1,4 +1,4 @@
-Title:  death
+Title:  Cowboys
 
 Byline:
 
@@ -27,7 +27,7 @@ Teaser:
 Body:
 
 
-* "[Will the Circle be Unbroken](will-the-circle-be-unbroken.html)"
--- *Traditional*
+* "[If I Had a Boat](if-i-had-a-boat.html)"
+-- *Written and performed by Lyle Lovett*
 
 

@@ -29,6 +29,6 @@ Body:
 
 <?nextrec?>
 * "[=$title$=](=$title&f$=.html)"  
-    - *=$byline$=*
+    -- *=$byline$=*
 
 <?loop?>

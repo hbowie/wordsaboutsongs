@@ -37,6 +37,6 @@ Body:
 
 <?endif?>
 * "[=$title$=](=$title&f$=.html)"  
-    - *=$byline$=*
+    -- *=$byline$=*
 
 <?loop?>
