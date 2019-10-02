@@ -44,7 +44,7 @@ As I go, I will try to categorize songs by theme. This may seem a bit simplistic
 
 I will of necessity be quoting lyrics as I go, and will also be sharing cover art, and my intent with such borrowing is never to damage the original copyright holder, but simply to make fair use of this material. 
 
-The original words on this site are copyright &copy; 2001 - 2017 by [Herb Bowie](http://www.herbbowie.com) and licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+The original words on this site are copyright &copy; 2001 - 2019 by [Herb Bowie](http://www.herbbowie.com) and licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 I will provide links to Apple Music (for streaming) and to iTunes (for downloads) alongside of each piece, and clicking on the album cover art will give you the option of purchasing the CD on Amazon. In all cases I encourage you to listen to the music I'm talking about, no doubt using your usual sources for such things. 
 
